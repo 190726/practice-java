@@ -3,6 +3,11 @@ package toby.practice.generic;
 import java.util.List;
 
 public class GenericStarted {
+
+    public <S> GenericStarted(S s) { //생성자에서도 제너릭을 사용할 수 있다.
+
+    }
+
     static class Hello<T>{} //받는 쪽은 type parameter 라고 한다. 인스턴스 생성시점에 파라미터를 사용한다
 
     static <T> void hello(T t) { // 클래스 레벨뿐만 아니라 메소드 레벨에서도 제너릭을 사용할 수 있다.
